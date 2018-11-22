@@ -1,1 +1,10 @@
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+}
 
+.title {
+  background-color:lightblue;
+  padding:20px 10px 5px 10px;
+  height:80px;
+  overflow:hidden;
+}
