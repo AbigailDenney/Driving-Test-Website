@@ -23,6 +23,7 @@ body {
   height:60px;
   margin-right: -20pt;
   margin-left: -11pt;
+  padding-top: 15px;
   width: 100%;
   position:absolute;
   box-shadow: 0 1px 5px #BEBEBE;
@@ -30,7 +31,7 @@ body {
 
 a:link, a:visited {
   color:white;
-  padding:16px;
+  padding:20px 10px 26px 10px;
   margin: 20px;
   text-align: center;
   text-decoration:none;
