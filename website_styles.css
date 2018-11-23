@@ -1,10 +1,18 @@
 body {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .title {
-  background-color:lightblue;
+  background-color:white;
   padding:20px 10px 5px 10px;
   height:80px;
+  margin: 0;
   overflow:hidden;
+}
+
+.menu {
+  background-color: #80ccff;
+  height:40px;
 }
