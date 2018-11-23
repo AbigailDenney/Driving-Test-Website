@@ -14,5 +14,19 @@ body {
 
 .menu {
   background-color: #80ccff;
-  height:40px;
+  height:60px;
+  margin: 0;
+}
+
+a:link, a:visited {
+  color:white;
+  padding:16px;
+  text-align: center;
+  text-decoration:none;
+  display:inline;
+}
+
+a:hover, a:active {
+  background-color: white;
+  color: black;
 }
