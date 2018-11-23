@@ -24,18 +24,23 @@ body {
   margin-right: -30pt;
   margin-left: -30pt;
   box-shadow: 5px 5px #BEBEBE;
-  width: 100%
+  width: 100%;
   position:absolute;
 }
 
 a:link, a:visited {
   color:white;
   padding:16px;
-  margin: 0;
+  margin: 20px;
   text-align: center;
   text-decoration:none;
   display:inline;
 }
+
+#left-most-button {
+  margin-left:40px;
+}
+
 
 a:hover, a:active {
   background-color: white;
