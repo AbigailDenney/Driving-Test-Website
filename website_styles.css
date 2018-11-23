@@ -24,11 +24,13 @@ body {
   margin: 0;
   box-shadow: 5px 5px #BEBEBE;
   width: 100%
+  position:absolute;
 }
 
 a:link, a:visited {
   color:white;
   padding:16px;
+  margin: 0;
   text-align: center;
   text-decoration:none;
   display:inline;
