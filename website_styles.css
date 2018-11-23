@@ -21,7 +21,8 @@ body {
 .menu {
   background-color: #80ccff;
   height:60px;
-  margin: -60pt;
+  margin-right: -30pt;
+  margin-left: -30pt;
   box-shadow: 5px 5px #BEBEBE;
   width: 100%
   position:absolute;
