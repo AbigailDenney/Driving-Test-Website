@@ -18,10 +18,6 @@ body {
   overflow:hidden;
 }
 
-.hidden {
-  overflow-x: hidden;
-}
-
 
 .menu {
   background-color: #80ccff;
