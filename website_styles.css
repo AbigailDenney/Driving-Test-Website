@@ -2,6 +2,8 @@ body {
   font-family: Verdana,sans-serif;
   font-size: 15px;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 .title {
@@ -24,6 +26,7 @@ a:link, a:visited {
   text-align: center;
   text-decoration:none;
   display:inline;
+  margin-top: 16px;
 }
 
 a:hover, a:active {
