@@ -1,3 +1,6 @@
+//defines the previous button
+var previousButton;
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function dropdownClicked(menuOption, triggeredId) {
@@ -8,7 +11,7 @@ function dropdownClicked(menuOption, triggeredId) {
     a different menu button*/
     window.onclick = function(event) {
       if (!event.target.matches('.menu-button') ||
-      event.target.id != triggeredId) {
+      event.target.id != previousButton && previousButton != undefined) {
 
         //list of all of the dropdown options for the button
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -21,5 +24,7 @@ function dropdownClicked(menuOption, triggeredId) {
           }
         }
       }
+
+      previousButton = triggeredId;
     }
 }
