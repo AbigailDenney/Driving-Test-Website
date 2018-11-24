@@ -32,7 +32,7 @@ body {
 
 
 /*menu links (buttons) -----> when the mouse is not hovering*/
-.menu-button {
+.menu-button :link, .menu-button :visited {
   color:white;
   padding:20px 10px 26px 10px;
   margin: 0px 20px;
@@ -48,7 +48,7 @@ body {
 }
 
 /* when the mouse is hovering over the link/button of the menu */
-a:hover, a:active {
+.menu-button :hover, .menu-button :active {
   background-color: white;
   color: black;
   text-decoration: none;
@@ -65,7 +65,7 @@ a:hover, a:active {
 
 
 /*attributes for the dropdown selections*/
-.dropdown-selection:link, ..dropdown-selection:visited {
+.dropdown-selection {
   display:block;
   text-decoration:none;
   color: black;
