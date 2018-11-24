@@ -61,6 +61,14 @@ a:hover, a:active {
   position: absolute;
 }
 
+/*attributes for the dropdown selections*/
+.dropdown a {
+  display:block;
+  text-decoration:none;
+  color: black;
+}
+
+
 /* shows the drop down menu*/
 .show {
   display:block;
