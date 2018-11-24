@@ -1,6 +1,6 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function dropdownClicked(menuOption) {
+function dropdownClicked(menuOption, triggeredId) {
     document.getElementById(menuOption).classList.toggle("show");
 
 
@@ -8,7 +8,7 @@ function dropdownClicked(menuOption) {
     a different menu button*/
     window.onclick = function(event) {
       if (!event.target.matches('.menu-button') ||
-      event.target.id != menuOption) {
+      event.target.id != triggeredId) {
 
         //list of all of the dropdown options for the button
         var dropdowns = document.getElementsByClassName("dropdown-content");
