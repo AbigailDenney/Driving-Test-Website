@@ -59,8 +59,10 @@ a:hover, a:active {
   display:none;
   background-color: #F5F5F5;
   position: absolute;
-  box-shadow:5px 5px 10px 10px #DCDCDC;
+  box-shadow:0px 8px 10px 0px #DCDCDC;
 }
+
+
 
 /*attributes for the dropdown selections*/
 .dropdown-selection {
@@ -69,6 +71,13 @@ a:hover, a:active {
   color: black;
   padding: 12px 16px;
 }
+
+/* when the dropdown selection is hovered over by the cursor*/
+.dropdown-selection:hover, .dropdown-selection:active{
+  background-color: #00ace6
+  color: white;
+}
+
 
 
 /* shows the drop down menu*/
