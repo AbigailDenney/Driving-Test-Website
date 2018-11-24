@@ -62,7 +62,7 @@ a:hover, a:active {
 }
 
 /*attributes for the dropdown selections*/
-.dropdown a {
+.dropdown-selection {
   display:block;
   text-decoration:none;
   color: black;
