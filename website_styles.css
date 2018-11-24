@@ -59,6 +59,7 @@ a:hover, a:active {
   display:none;
   background-color: #F5F5F5;
   position: absolute;
+  box-shadow:5px 5px 10px 10px #DCDCDC;
 }
 
 /*attributes for the dropdown selections*/
@@ -66,6 +67,7 @@ a:hover, a:active {
   display:block;
   text-decoration:none;
   color: black;
+  padding: 12px 16px;
 }
 
 
