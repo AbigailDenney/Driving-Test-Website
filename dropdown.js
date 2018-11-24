@@ -3,7 +3,7 @@ var previousButton;
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function dropdownClicked(menuOption, triggeredId) {
+function dropdownClicked(menuOption) {
 
     /*Close the dropdown menu if the user clicks outside of it or they selected
     a different menu button*/
@@ -23,9 +23,11 @@ function dropdownClicked(menuOption, triggeredId) {
         }
       }
 
+      //displays the content
       document.getElementById(menuOption).classList.toggle("show");
 
-      
-      previousButton = triggeredId;
+      /*stores the current triggered id as the previous button clicked for the
+      next time the user clicks on a menu button*/
+      previousButton = event.target.id;
     }
 }
