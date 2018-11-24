@@ -85,9 +85,3 @@ body {
 .show {
   display:block;
 }
-
-
-/*position of the dropdown selections relative to the info button*/
-.info-pos {
-  position: relative;
-}
