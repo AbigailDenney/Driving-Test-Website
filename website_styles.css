@@ -65,7 +65,7 @@ a:hover, a:active {
 
 
 /*attributes for the dropdown selections*/
-.dropdown-selection {
+.dropdown-selection:link, ..dropdown-selection:visited {
   display:block;
   text-decoration:none;
   color: black;
