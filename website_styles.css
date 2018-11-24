@@ -10,6 +10,7 @@ body {
   line-height: 1.6;
 }
 
+/*title of the page*/
 .title {
   background-color:white;
   padding:20px 10px 5px 10px;
@@ -17,7 +18,7 @@ body {
   overflow:hidden;
 }
 
-
+/*overall menu bar*/
 .menu {
   background-color: #80ccff;
   height:60px;
@@ -29,7 +30,9 @@ body {
   box-shadow: 0 1px 5px #BEBEBE;
 }
 
-a:link, a:visited {
+
+/*menu links (buttons) -----> when the mouse is not hovering*/
+.menu-button {
   color:white;
   padding:20px 10px 26px 10px;
   margin: 20px;
@@ -38,13 +41,24 @@ a:link, a:visited {
   display:inline;
 }
 
+
+/*make the left most menu link to be displayed on the page*/
 #left-most-button {
   margin-left:40px;
 }
 
-
+/* when the mouse is hovering over the link/button of the menu */
 a:hover, a:active {
   background-color: white;
   color: black;
   text-decoration: none;
+}
+
+.dropdown-content {
+  display:none;
+}
+
+/* shows the drop down menu*/
+.show {
+  display:block;
 }
