@@ -76,6 +76,7 @@ body {
 .dropdown-selection:hover, .dropdown-selection:active{
   background-color: #00ace6;
   color: white;
+  text-decoration:none;
 }
 
 
