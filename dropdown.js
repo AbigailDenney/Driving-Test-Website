@@ -4,9 +4,11 @@ function dropdownClicked(menuOption) {
     document.getElementById(menuOption).classList.toggle("show");
 
 
-    // Close the dropdown menu if the user clicks outside of it
+    /*Close the dropdown menu if the user clicks outside of it or they selected
+    a different menu button*/
     window.onclick = function(event) {
-      if (!event.target.matches('.menu-button')) {
+      if (!event.target.matches('.menu-button') ||
+      event.target.id != menuOption) {
 
         //list of all of the dropdown options for the button
         var dropdowns = document.getElementsByClassName("dropdown-content");
