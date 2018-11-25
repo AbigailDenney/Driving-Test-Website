@@ -43,11 +43,6 @@ body {
 }
 
 
-/*make the left most menu link to be displayed on the page*/
-#left-most-button {
-  margin-left:40px;
-}
-
 /* when the mouse is hovering over the link/button of the menu */
 .menu-button:hover, .menu-button:active {
   background-color: white;
@@ -91,7 +86,7 @@ body {
 .hidden-align-info {
   float:left;
   position:absolute;
-  margin-left:70px;
+  margin-left:90px;
 }
 
 .hidden-align-quizzes {
@@ -103,7 +98,7 @@ body {
 .hidden-align-minigames {
   float:left;
   position:absolute;
-  margin-left:240px;
+  margin-left:270px;
 }
 
 .hidden-home-align {
@@ -115,5 +110,5 @@ body {
 .hidden-contacts-align {
   float:left;
   position:absolute;
-  margin-left:310px;
+  margin-left:390px;
 }
