@@ -91,19 +91,19 @@ body {
 .hidden-align-info {
   float:left;
   position:absolute;
-  margin-left:20px;
+  margin-left:70px;
 }
 
 .hidden-align-quizzes {
   float:left;
   position:absolute;
-  margin-left:100px;
+  margin-left:170px;
 }
 
 .hidden-align-minigames {
   float:left;
   position:absolute;
-  margin-left:200px;
+  margin-left:240px;
 }
 
 .hidden-home-align {
@@ -115,5 +115,5 @@ body {
 .hidden-contacts-align {
   float:left;
   position:absolute;
-  margin-left:300px;
+  margin-left:310px;
 }
