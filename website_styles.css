@@ -105,3 +105,15 @@ body {
   position:absolute;
   margin-left:200px;
 }
+
+.hidden-home-align {
+  float:left;
+  position:absolute;
+  margin-left:0px;
+}
+
+.hidden-contacts-align {
+  float:left;
+  position:absolute;
+  margin-left:300px;
+}
