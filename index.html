@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="website_styles.css">
   <script src="homepage_actions.js"></script>
   <script src="dropdown.js"></script>
@@ -20,7 +21,7 @@
 
 
 <div class="menu">
-  <a id="left-most-button"class="menu-button col-sm-2" href="index.html"> HOME </a>
+  <a id="left-most-button"class="menu-button col" href="index.html"> HOME </a>
 
   <a id="info" class="menu-button col-sm-2" onclick="dropdownClicked('dropdownInfo')" href="javascript:void(0)"> INFO </a>
   <div id="dropdownInfo" class="dropdown-content">
@@ -32,7 +33,7 @@
   </div>
 
 
-  <a id="quizzes" class="menu-button col-sm-2" onclick="dropdownClicked('dropdownQuizzes')" href="javascript:void(0)"> QUIZZES </a>
+  <a id="quizzes" class="menu-button col" onclick="dropdownClicked('dropdownQuizzes')" href="javascript:void(0)"> QUIZZES </a>
   <div id="dropdownQuizzes" class="dropdown-content">
     <a class="dropdown-selection quiz-select"  href="quizzes/quiz1.html">Easy </a>
     <a class="dropdown-selection quiz-select" href="quizzes/quiz2.html">Medium</a>
@@ -40,7 +41,7 @@
   </div>
 
 
-  <a id="minigames" class="menu-button col-sm-2" onclick="dropdownClicked('dropdownMinigames')" href="javascript:void(0)"> MINIGAMES </a>
+  <a id="minigames" class="menu-button col" onclick="dropdownClicked('dropdownMinigames')" href="javascript:void(0)"> MINIGAMES </a>
   <div id="dropdownMinigames" class="dropdown-content">
     <a class="dropdown-selection game-select" href="games/game1.html">Game A</a>
     <a class="dropdown-selection game-select" href="games/game2.html">Game B</a>
@@ -48,7 +49,7 @@
   </div>
 
 
-  <a class="menu-button col-sm-2" href="contacts/contact_page.html"> CONTACTS </a>
+  <a class="menu-button col" href="contacts/contact_page.html"> CONTACTS </a>
 </div>
 
 </div>
