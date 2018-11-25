@@ -26,8 +26,8 @@ function dropdownClicked(menuOption) {
       /*stores the current triggered id as the previous button clicked for the
       next time the user clicks on a menu button*/
       previousButton = event.target.id;
-    }
 
-    //displays the content
-    document.getElementById(menuOption).classList.toggle("show");
+      //displays the content
+      document.getElementById(menuOption).classList.toggle("show");
+    }
 }
