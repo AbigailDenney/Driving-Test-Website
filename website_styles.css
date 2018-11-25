@@ -39,7 +39,7 @@ body {
   text-align: center;
   text-decoration:none;
   display:inline;
-  position: relative;
+  position:relative;
 }
 
 
@@ -89,8 +89,20 @@ body {
 }
 
 
-.hidden-align{
+.hidden-align-info  {
   float:left;
   margin-left:20px;
-  position:absolute
+  position:absolute;
+}
+
+.hidden-align-quizzes {
+  float:left;
+  margin-left:20px;
+  position:absolute;
+}
+
+.hidden-align-minigames {
+  float:left;
+  margin-left:20px;
+  position:absolute;
 }
