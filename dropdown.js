@@ -8,10 +8,19 @@ function dropdownClicked(menuOption) {
     /*Close the dropdown menu if the user clicks outside of it or they selected
     a different menu button*/
     window.onclick = function(event) {
+
+      //closes dropdown menu when user clicks outside of it
       if (!event.target.matches('.menu-button')) {
         collapse();
+
+      //changes dropdown menu when user selects another menu option
       } else if (event.target.id != previousButton && previousButton != undefined) {
         collapse();
+        //displays the content
+        document.getElementById(menuOption).classList.toggle("show");
+
+      //displays the first menu button pressed
+      } else if (previousButton == undefined) {
         //displays the content
         document.getElementById(menuOption).classList.toggle("show");
       }
