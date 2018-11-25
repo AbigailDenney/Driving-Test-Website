@@ -91,12 +91,15 @@ body {
 /*allosw the dropdown selections to be aligned with the menu button*/
 .hidden-align-info {
   position: absolute;
+  right: 20px;
 }
 
 .hidden-align-quizzes {
   position: absolute;
+  right: 40px;
 }
 
 .hidden-align-minigames {
   position: absolute;
+  right: 60px;
 }
