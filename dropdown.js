@@ -8,7 +8,7 @@ function dropdownClicked(menuOption) {
     /*Close the dropdown menu if the user clicks outside of it or they selected
     a different menu button*/
     window.onclick = function(event) {
-      if (!event.target.matches('.menu-button') ||
+      if (!event.target.matches(event.target.id) ||
       event.target.id != previousButton && previousButton != undefined) {
 
         //list of all of the dropdown options for the button
