@@ -89,6 +89,14 @@ body {
 
 
 /*allosw the dropdown selections to be aligned with the menu button*/
-.hidden-align {
+.hidden-align-info {
+  position: absolute;
+}
+
+.hidden-align-quizzes {
+  position: absolute;
+}
+
+.hidden-align-minigames {
   position: absolute;
 }
