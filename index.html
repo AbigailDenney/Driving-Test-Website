@@ -2,14 +2,9 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="website_styles.css">
   <script src="homepage_actions.js"></script>
-  <script src="dropdown.js"></script>
 </head>
 <body>
 
@@ -19,49 +14,42 @@
 <h2>G1 Driving Test</h2>
 </div>
 
+<nav class= "menu" role="navigation">
+<ul>
+  <li> <a class="menu-button" href="index.html"> HOME </a></li>
 
-<div class="menu">
-
-<div class="hidden-home-align col-3">
-  <a class="menu-button col-3" href="index.html"> HOME </a>
-</div>
-
-<div class="hidden-align-info col-2">
-  <a id="info" class="menu-button col-2" onclick="dropdownClicked('dropdownInfo')" href="javascript:void(0)"> INFO </a>
-  <div id="dropdownInfo" class="dropdown-content">
-    <a class="dropdown-selection info-select" href="info_pages/introduction.html"> What is the G1 Test? </a>
-    <a class="dropdown-selection info-select" href="info_pages/How_to_get_it.html "> How to get it </a>
-    <a class="dropdown-selection info-select" href="info_pages/Ontario_Drivers_Handbook.html">Ontario Drivers Handbook </a>
-    <a class="dropdown-selection info-select" href="info_pages/When_and_Where.html"> When and Where</a>
-    <a class="dropdown-selection info-select" href="info_pages/More_Information.html"> More Information </a>
-  </div>
-</div>
+  <li class="sub-menu"> <a class="menu-button" href="javascript:void(0)"> INFO </a>
+    <ul class="dropdown-box">
+      <li> <a class="dropdown-selection" href="info_pages/introduction.html"> What is the G1 Test? </a></li>
+      <li><a class="dropdown-selection" href="info_pages/How_to_get_it.html "> How to get it </a></li>
+      <li> <a class="dropdown-selection" href="info_pages/Ontario_Drivers_Handbook.html">Ontario Drivers Handbook </a> </li>
+      <li> <a class="dropdown-selection" href="info_pages/When_and_Where.html"> When and Where</a></li>
+      <li> <a class="dropdown-selection" href="info_pages/More_Information.html"> More Information </a> </li>
+    </ul>
+  </li>
 
 
-<div class="hidden-align-quizzes col-2">
-  <a id="quizzes" class="menu-button col-2" onclick="dropdownClicked('dropdownQuizzes')" href="javascript:void(0)"> QUIZZES </a>
-  <div id="dropdownQuizzes" class="dropdown-content">
-    <a class="dropdown-selection quiz-select"  href="quizzes/Easy_Quiz.html">Easy </a>
-    <a class="dropdown-selection quiz-select" href="quizzes/Medium_Quiz.html">Medium</a>
-    <a class="dropdown-selection quiz-select" href="quizzes/Hard_Quiz.html">Difficult</a>
-  </div>
-</div>
+  <li class="sub-menu"> <a class="menu-button" href="javascript:void(0)"> QUIZZES </a>
+  <ul class="dropdown-box">
+    <li><a  href="quizzes/Easy_Quiz.html">Easy </a></li>
+    <li><a  href="quizzes/Medium_Quiz.html">Medium </a></li>
+    <li><a  href="quizzes/Hard_Quiz.html">Hard </a></li>
+  </ul>
+  </li>
 
 
-<div class="hidden-align-minigames col-2">
-  <a id="minigames" class="menu-button col-2" onclick="dropdownClicked('dropdownMinigames')" href="javascript:void(0)"> MINIGAMES </a>
-  <div id="dropdownMinigames" class="dropdown-content">
-    <a class="dropdown-selection game-select" href="games/game1.html">Game A</a>
-    <a class="dropdown-selection game-select" href="games/game2.html">Game B</a>
-    <a class="dropdown-selection game-select" href="games/game3.html">Game C</a>
-  </div>
-</div>
+   <li class="sub-menu"> <a class="menu-button" href="javascript:void(0)"> MINIGAMES </a>
+   <ul class="dropdown-box">
+     <li><a href="games/game1.html">Game A</a></li>
+     <li><a href="games/game2.html">Game B</a></li>
+     <li><a href="games/game3.html">Game C</a></li>
+   </ul>
+   </li>
 
-<div class="hidden-contacts-align col-3">
-  <a class="menu-button col-3" href="contacts/contact_page.html"> CONTACTS </a>
-</div>
 
-</div>
+    <li> <a class="menu-button" href="javascript:void(0)"> CONTACTS </a></li>
+</ul>
+</nav>
 
 </div>
 

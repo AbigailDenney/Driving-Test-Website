@@ -1,10 +1,10 @@
-html, body {
-  margin: 0;
-  padding: 0;
+* {
+  box-sizing:border-box;
 }
 
 
 body {
+  margin:0;
   font-family: Verdana,sans-serif;
   font-size: 15px;
   line-height: 1.6;
@@ -18,100 +18,80 @@ body {
   overflow:hidden;
 }
 
-/*overall menu bar*/
-.menu {
-  background-color: #80ccff;
-  margin-right: -20pt;
-  margin-left: -11pt;
-  height:60px;
-  padding-top: 15px;
-  width: 100%;
-  position:absolute;
-  box-shadow: 0 1px 5px #BEBEBE;
-  display: flex;
+
+/*menu*/
+.menu ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
   flex-wrap: wrap;
 }
 
+/*menu buttons*/
+.menu ul li{
+  width:20%;
+}
 
-/*menu links (buttons) -----> when the mouse is not hovering*/
-.menu-button:link, .menu-button:visited {
-  color:white;
-  padding:20px 10px 26px 10px;
-  margin: 0px 20px;
+/*dropdown box*/
+.menu ul li > ul {
+  display:none;
+  flex:column;
+}
+
+.menu ul li > ul li {
+  width: 100%;
+}
+
+/*hovering over the dropdown box*/
+.menu ul li:hover > ul {
+  display: flex;
+}
+
+/*menu button*/
+.menu ul li > a {
+  display: block;
+  background: #80ccff;
+  padding: 20px 10px 26px 10px;
+  color: white;
+  text-decoration: none;
   text-align: center;
-  text-decoration:none;
-  display:inline;
-  position:relative;
+  border-bottom: 1px solid rgba(1,2,3,0.3);
 }
 
 
-/* when the mouse is hovering over the link/button of the menu */
-.menu-button:hover, .menu-button:active {
+/*hovering over the menu button*/
+.menu ul li > a:hover {
   background-color: white;
   color: black;
   text-decoration: none;
 }
 
-/*content for the dropdown*/
-.dropdown-content {
-  display:none;
-  background-color: #F5F5F5;
-  position: relative;
-  box-shadow:0px 8px 10px 0px #DCDCDC;
-}
-
-
-
-/*attributes for the dropdown selections*/
-.dropdown-selection {
-  display:block;
-  text-decoration:none;
+/* attributes for the dropdown content*/
+.menu ul li:hover > ul li > a {
   color: black;
-  padding: 12px 16px;
+  background-color:#F5F5F5;
 }
 
-/* when the dropdown selection is hovered over by the cursor*/
-.dropdown-selection:hover, .dropdown-selection:active{
+/*attributes for the dropdown selection when hovered*/
+.menu ul li:hover > ul li > a:hover {
   background-color: #00ace6;
   color: white;
   text-decoration:none;
 }
 
-
-
-/* shows the drop down menu*/
-.show {
-  display:block;
+.sub-menu > a:after {
+  content: "+";
+  padding-left: 5px;
 }
 
+/*when screen width is less than 700px*/
+@media screen and (max-width: 700px) {
+  .menu ul {
+    flex-direction: column;
+  }
 
-.hidden-align-info {
-  float:left;
-  position:absolute;
-  margin-left:90px; 
-}
-
-.hidden-align-quizzes {
-  float:left;
-  position:absolute;
-  margin-left:170px;
-}
-
-.hidden-align-minigames {
-  float:left;
-  position:absolute;
-  margin-left:270px;
-}
-
-.hidden-home-align {
-  float:left;
-  position:absolute;
-  margin-left:0px;
-}
-
-
-.hidden-contacts-align {
-  float:left;
-  position:absolute;
-  margin-left:390px;
+  .menu ul li {
+    width:100%;
+  }
 }
