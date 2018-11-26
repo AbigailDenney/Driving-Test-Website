@@ -23,6 +23,7 @@ body {
   background-color: #80ccff;
   margin-right: -20pt;
   margin-left: -11pt;
+  height:60px;
   padding-top: 15px;
   width: 100%;
   position:absolute;
@@ -84,10 +85,33 @@ body {
 }
 
 
-.menu > .hidden {
-  width: 75px;
-  margin: 10px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 16px;
+.hidden-align-info {
+  float:left;
+  position:absolute;
+  margin-left:90px; 
+}
+
+.hidden-align-quizzes {
+  float:left;
+  position:absolute;
+  margin-left:170px;
+}
+
+.hidden-align-minigames {
+  float:left;
+  position:absolute;
+  margin-left:270px;
+}
+
+.hidden-home-align {
+  float:left;
+  position:absolute;
+  margin-left:0px;
+}
+
+
+.hidden-contacts-align {
+  float:left;
+  position:absolute;
+  margin-left:390px;
 }
