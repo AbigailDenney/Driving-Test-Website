@@ -7,7 +7,7 @@ function dropdownClicked(menuOption) {
 
     /*Close the dropdown menu if the user clicks outside of it or they selected
     a different menu button*/
-    window.onclick = function(event) {
+    window.onmouseover = function(event) {
 
       //closes dropdown menu when user clicks outside of it
       if (!event.target.matches('.menu-button')) {
