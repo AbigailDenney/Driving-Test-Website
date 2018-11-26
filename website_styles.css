@@ -21,13 +21,14 @@ body {
 /*overall menu bar*/
 .menu {
   background-color: #80ccff;
-  height:60px;
   margin-right: -20pt;
   margin-left: -11pt;
   padding-top: 15px;
   width: 100%;
   position:absolute;
   box-shadow: 0 1px 5px #BEBEBE;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -83,32 +84,10 @@ body {
 }
 
 
-.hidden-align-info {
-  float:left;
-  position:absolute;
-  margin-left:90px;
-}
-
-.hidden-align-quizzes {
-  float:left;
-  position:absolute;
-  margin-left:170px;
-}
-
-.hidden-align-minigames {
-  float:left;
-  position:absolute;
-  margin-left:270px;
-}
-
-.hidden-home-align {
-  float:left;
-  position:absolute;
-  margin-left:0px;
-}
-
-.hidden-contacts-align {
-  float:left;
-  position:absolute;
-  margin-left:390px;
+.menu > .hidden {
+  width: 75px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
 }
