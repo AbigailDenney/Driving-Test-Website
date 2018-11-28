@@ -13,6 +13,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <p id="number" style="float: right;"></p>
     <div class="container-fluid" id="que">
     <h>Easy Quiz!</h>
     <br>
@@ -21,7 +22,7 @@
 <div id="correct"></div>
 <div id="menu"></div>
 <script>
-var ans, i, len, x, z, y, counter=0, j= -1, n;
+var ans, i, len, x, z, y, counter=0, j= -1, n, num=0;
 var q=[
         "You should under all conditions drive at a speed which will allow you to",
         "Where are you?"
@@ -46,6 +47,8 @@ var d=[
 
 function question() {
 j++;
+num++;
+document.getElementById("number").innerHTML = num + "/20 Complete";
 document.getElementById("que").innerHTML ='<p>'+ q[j] +'</p><br><form><input type="radio" name="choice" value="'+ a[j] +'">'+ a[j] +'<br><input type="radio" name="choice" value="'+ b[j] +'">'+ b[j] +'<br><input type="radio" name="choice" value="'+ c[j] +'">'+ c[j] +'<br><input type="radio" name="choice" value="'+ d[j] +'">'+ d[j] +'<br></form><button onclick="answer('+ j +')">Submit Answer</button><div id="correct"></div><div id="menu"></div>';
 }
 
@@ -84,6 +87,7 @@ document.getElementById("menu").innerHTML =
 }
 }
 function end(){
+document.getElementById("number").innerHTML = "";
     if (counter == 20){
       document.getElementById("que").innerHTML = "Perfect! <br> You got "+ counter +"/20!";
     }else if (counter > 15){
